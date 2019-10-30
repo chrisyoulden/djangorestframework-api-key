@@ -1,13 +1,7 @@
-import typing
-
 from django.conf import settings
-from django.http import HttpRequest
 from rest_framework import permissions
 
-from .models import AbstractAPIKey, APIKey
-
-if typing.TYPE_CHECKING:
-    from django.db import models
+from .models import APIKey
 
 
 class KeyParser:
